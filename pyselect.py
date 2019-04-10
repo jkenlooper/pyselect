@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+from builtins import str
+from builtins import input
 __title__     = 'pyselect'
 __version__   = '0.2.0'
 __author__    = 'Matthew Behrens'
@@ -21,7 +24,7 @@ def select(options=None):
     if sys.stdin.isatty():
         # regular prompt
         try:
-            response = raw_input().strip()
+            response = input().strip()
         except (EOFError, KeyboardInterrupt):
             # handle ctrl-d, ctrl-c
             response = ''
@@ -50,7 +53,7 @@ def main(args=None):
         args = sys.argv[1:]
     response = select(args)
     if response:
-        print response
+        print(response)
 
 if __name__ == '__main__':
     main()
