@@ -1,15 +1,19 @@
 #!/usr/bin/env python
 
 from setuptools import setup, find_packages
-import pyselect
+__title__     = 'pyselect'
+__version__   = '0.2.0'
+__author__    = 'Matthew Behrens'
+__license__   = 'MIT'
+__copyright__ = 'Copyright 2013 Matthew Behrens'
 
 setup(
     name                 = 'pyselect',
-    version              = pyselect.__version__,
+    version              = __version__,
     description          = 'A Python library for easily getting user input form multiple items in a list, emulating the Bash(1) builtin select.',
     long_description     = open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
 
-    author               = pyselect.__author__,
+    author               = __author__,
     author_email         = 'askedrelic@gmail.com',
     url                  = 'https://github.com/askedrelic/pyselect',
     license              = open("LICENSE.txt").read(),

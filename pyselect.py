@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+from builtins import str
+from builtins import input
 __title__     = 'pyselect'
 __version__   = '0.2.0'
 __author__    = 'Matthew Behrens'
